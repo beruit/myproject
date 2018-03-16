@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>computer purchase</title>
+    <style>
+        body{background: #e3e3e3; margin:0; padding: 0;}
+        .ComputerBrand{background-color: darkcyan; }
+        .delivery{background-color: darkseagreen;}
+        .packing{background-color: burlywood;}
+
+    </style>
+</head>
+<body>
+<form action="computerdealer.php" method="POST">
+    <div class="ComputerBrand">
+        <fieldset><legend style="color: white; text-shadow: 1px 1px 2px black,0 0 25px blue,0 0 5px darkblue;">Computer Brands</legend>
+            <div class="ComputerBrand">
+            DELL<br>
+            <input type="number" name="dell">
+            (RS 20,000 for each)<br>
+            MAC<br>
+            <input type="number" name="mac">
+            (RS 40,000 for each)<br>
+            Toshiba<br>
+            <input type="number" name="toshiba">
+            (RS 30,000 for each)<br>
+        </fieldset>
+    </div>
+        <div class="delivery">
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <input type="radio" name="delivery" value="home">Home Delivery (Rs 100)
+                <input type="radio" name="delivery" value="pickup">Pick Up (Free)
+            </fieldset>
+        </div>
+        <div class="packing">
+            <fieldset>
+                <legend>Packing Choices</legend>
+                <input type="radio" name="packing" value="box">Box (Rs 50)
+                <input type="radio" name="packing" value="bag">Bag (RS 100)
+                <input type="radio" name="packing" value="giftbox">Gift Box (Rs 200)
+            </fieldset>
+        </div>
+        Location:
+        <select name="location">
+            <option value="ktm">Kathmandu (13%)</option>
+            <option value="ltp">Lalitpur</option>
+            <option value="bkt">Bhaktapur</option>
+        </select>
+        <br>
+        <input type="submit" value="CALCULATE" style="height:50px; background-color: orangered; border-radius:15px 15px;">
+</form>
+</body>
+</html>
